@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul li a{
+  color: black !important;
+  font-size: small !important;
+}
+.navbarHeading{
+  color: black !important;
+  font-size: medium !important;
+}
+.navbar-nav button{
+  font-size: small !important;
+ 
+}
+
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: calc( 100vh - 70px) ; /* Adjust the height as needed */
+}
+
+.chat .d-flex {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.chat .position-relative {
+  position: relative;
+  width: 100%;
+}
+
+.chat .chatInput {
+  /* Your input styles here */
+  width: 100%;
+  /* Add any other styles you want for the input */
+}
+
+
+.chatInput {
+  width: 100% !important;
+  height: 60px !important;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.5);
+  padding-left: 20px;
+  padding-right: 70px;
+}
+.chatInput::placeholder {
+  color: grey;
+}
+
+.chatInput:focus {
+  outline: none;
+  border: none;
+}
+.microphoneIcon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  background-color: black;
+  color: white;
+}
